@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evermitch Datasolution - Data Services & Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">
+                            Evermitch Datasolution
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#training" class="text-gray-700 hover:text-blue-600 transition-colors">Training</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
+        <div class="text-center text-white z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Transform Your Data
+                <span class="block text-blue-400">Into Success</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Empowering businesses with cutting-edge data solutions, comprehensive training, and strategic insights to drive growth and innovation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Our Services
+                </a>
+                <a href="#training" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Training Programs
+                </a>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="stats-card text-white p-6 rounded-lg mb-4">
+                        <i class="fas fa-users text-3xl mb-2"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">500+</h3>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-card text-white p-6 rounded-lg mb-4">
+                        <i class="fas fa-project-diagram text-3xl mb-2"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">1000+</h3>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-card text-white p-6 rounded-lg mb-4">
+                        <i class="fas fa-graduation-cap text-3xl mb-2"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">2000+</h3>
+                    <p class="text-gray-600">Students Trained</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-card text-white p-6 rounded-lg mb-4">
+                        <i class="fas fa-award text-3xl mb-2"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">50+</h3>
+                    <p class="text-gray-600">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive data solutions tailored to your business needs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-database text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Data Analytics</h3>
+                    <p class="text-gray-600 mb-6">
+                        Transform raw data into actionable insights with our advanced analytics solutions.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Predictive Analytics</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Business Intelligence</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Machine Learning</h3>
+                    <p class="text-gray-600 mb-6">
+                        Implement AI and ML solutions to automate processes and improve decision-making.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom ML Models</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Process Automation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AI Integration</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-cloud text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-6">
+                        Scalable cloud infrastructure and migration services for modern businesses.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud Migration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Infrastructure Setup</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Security & Compliance</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Data Security</h3>
+                    <p class="text-gray-600 mb-6">
+                        Protect your valuable data with enterprise-grade security solutions.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Encryption Services</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Compliance Audits</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Threat Detection</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Business Intelligence</h3>
+                    <p class="text-gray-600 mb-6">
+                        Create comprehensive dashboards and reports for better decision-making.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom Dashboards</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Real-time Reports</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>KPI Tracking</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-cogs text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Data Engineering</h3>
+                    <p class="text-gray-600 mb-6">
+                        Build robust data pipelines and infrastructure for seamless data flow.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>ETL Pipeline Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Data Warehousing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>API Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Training Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Empower your team with cutting-edge data skills through our comprehensive training programs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-laptop-code text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Data Science Bootcamp</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Intensive 12-week program covering Python, statistics, machine learning, and data visualization.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>12 Weeks</span>
+                            <i class="fas fa-users ml-4 mr-2"></i>
+                            <span>Max 15 Students</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-chart-bar text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Business Analytics</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Learn to analyze business data and create actionable insights using modern tools.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>8 Weeks</span>
+                            <i class="fas fa-users ml-4 mr-2"></i>
+                            <span>Max 20 Students</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-robot text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Machine Learning</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Master machine learning algorithms and implement AI solutions for real-world problems.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>10 Weeks</span>
+                            <i class="fas fa-users ml-4 mr-2"></i>
+                            <span>Max 12 Students</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-50 to-red-50 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-cloud text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Cloud & DevOps</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Learn cloud computing, containerization, and DevOps practices for modern applications.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>6 Weeks</span>
+                            <i class="fas fa-users ml-4 mr-2"></i>
+                            <span>Max 18 Students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About Evermitch Datasolution</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We are a leading data solutions company dedicated to helping businesses harness the power of their data. With years of experience in data science, analytics, and technology, we provide comprehensive solutions that drive growth and innovation.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Our team of experts combines deep technical knowledge with business acumen to deliver solutions that not only solve technical challenges but also create measurable business value.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                            <div class="text-gray-600">Expert Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+                         alt="Team working" class="rounded-lg shadow-lg">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">99%</div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600">Success stories from businesses we've helped transform</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card text-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold text-lg">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">John Smith</h4>
+                            <p class="text-sm opacity-90">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-lg">
+                        "Evermitch transformed our data strategy completely. Their insights helped us increase revenue by 40% in just 6 months."
+                    </p>
+                </div>
+                <div class="testimonial-card text-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold text-lg">S</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-sm opacity-90">Data Director, InnovateCo</p>
+                        </div>
+                    </div>
+                    <p class="text-lg">
+                        "The training program was exceptional. Our team now has the skills to handle complex data challenges independently."
+                    </p>
+                </div>
+                <div class="testimonial-card text-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold text-lg">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Mike Chen</h4>
+                            <p class="text-sm opacity-90">CTO, DataFlow Inc</p>
+                        </div>
+                    </div>
+                    <p class="text-lg">
+                        "Professional, reliable, and results-driven. Evermitch delivered exactly what we needed and more."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Ready to transform your data strategy? Let's talk!</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-600">info@evermitchdatasolution.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Address</h4>
+                                <p class="text-gray-600">123 Data Street, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Data Analytics</option>
+                                <option>Machine Learning</option>
+                                <option>Cloud Solutions</option>
+                                <option>Training Programs</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-bg bg-clip-text text-transparent mb-4">
+                        Evermitch Datasolution
+                    </h3>
+                    <p class="text-gray-400">
+                        Transforming businesses through innovative data solutions and comprehensive training programs.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Data Analytics</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cloud Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Data Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Training</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Data Science Bootcamp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Business Analytics</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>info@evermitchdatasolution.com</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>123 Data Street, Tech City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Evermitch Datasolution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html> 
